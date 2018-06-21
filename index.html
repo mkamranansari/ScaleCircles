@@ -11,16 +11,6 @@
 			position: relative;
 			height: 100vh;
 		}
-		.circle{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%,-50%) scale(1);
-			border-radius: 30px;
-			width: 30px;
-			height: 30px;
-			animation: fadecir 0.8s infinite cubic-bezier(.26, .03, 0, 1.25);
-		}
 		.loader1, .loader2{
 			position: absolute;
 			width: 60px;
@@ -41,11 +31,6 @@
 			border-color: #ac3232;
 			animation-delay: 0.25s;
 		}
-		@keyframes fadecir{
-			0%{ opacity: 0;}
-			50%{ opacity: 1;}
-			100%{ opacity: 0;}
-		}
 		@keyframes loadk{
 			0%{
 				transform: translate(-50%,-50%) scale(0);
@@ -62,7 +47,6 @@
 	</style>
 </head>
 <body>
-	<div class="circle"></div>
 	<div class="loader1"></div>
 	<div class="loader2"></div>
 </body>
